@@ -9,7 +9,12 @@ Public Class Form1
     End Sub
 
     Function FirstName(ByVal name As String) As String
-        Return "Not Implemented Yet"
+
+        name = name.Trim
+        Dim FName() As String = Split(name)
+        Dim NameReturn = FName(0)
+        Return NameReturn
+
     End Function
 
 End Class
